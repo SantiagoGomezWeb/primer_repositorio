@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\img\cpce.ico" type="img"/>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>Gestion de Usuarios</title>
+</head>
+
+<body>
+    <div class="grillaGestionUsu">
+        <header class="border flexible">
+            <img src="../img/logoNuevo.png" alt="CPCE">        
+            <h1 class="tituloPrincipal">Consejo Profesional de Ciencias Económicas</h1>
+        </header>
+        <!-- <nav class="border">Navegacion</nav> -->
+        <nav class="menu border">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="concursos.html">Concursos</a></li>
+                <li><a href="cotizaciones.html">Cotizaciones</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="gestionUsuarios.html">Gestion usuarios</a></li>
+            </ul>
+        </nav>
+
+        <section id="inputDatos">
+            <h2>Gestion de Usuarios</h2>
+            <form action="#" target="" method="get" name="formDatosPersonales">
+
+                <label for="cuit">C.U.I.T.</label>
+                <input type="text" name="cuit" id="cuit" placeholder="99-9999999-9"/>
+            
+                <label for="razonsocial">Razón Social</label>
+                <input type="text" name="razonsocial" id="razonsocial" placeholder="Razón Social"/>
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email" required />
+            
+                <label for="contraseña">Contraseña</label>
+                <input type ="password" name="contraseña" id="contraseña" placeholder="********"/>
+            
+                <input type="submit" name="enviar" value="enviar datos"/>
+            </form>
+        </section>
+
+        <section id="panelCaptcha">
+            <div class="g-recaptcha" data-sitekey="TU CLAVE DEL SITIO AQUÍ" data-callback="correctCaptcha"></div>
+        </section>
+
+
+        <footer class="border">
+            <p>Av. Hipólito Yrigoyen 490 (X5000JHR) - Córdoba</p>
+            <p>cpcecba@cpcecba.org.ar</p>
+            <p>Tel. (0351) 468-8300</p>    
+        </footer>
+        
+    </div>
+
+</body>
+
+
+</html>
