@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto";
-    src: url('../fonts/Roboto-Light.ttf');
+    src: url('../fonts/Roboto-Light.ttf'); 
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: #e8eeee;
+    background-color: #dbedf3;
 }
 
 .border {
@@ -19,6 +19,108 @@ body{
     border-radius: .3em;
 }
 
+.grilla{
+    display:grid;
+    gap:10px;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:.5fr .5fr 5fr .5fr;
+    grid-template-areas: "header header"
+"nav nav"
+"protesis medicamentos"
+"footer footer"
+}
+
+
+.grillaConcursos{
+    display:grid;
+    gap:10px;
+    height: 100vh;
+    grid-template-columns: 80% 20%;
+    grid-template-rows:.5fr .5fr 1fr 1fr .5fr;
+    grid-template-areas: "header header"
+"nav nav"
+"protesisConcurso blanco"
+"medicamentosConcurso blanco"
+"footer footer"
+}
+
+
+.grillaCotizaciones{
+    display:grid;
+    gap:10px;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:.5fr .5fr 1fr 1fr .5fr;
+    grid-template-areas: "header header"
+    "nav nav"
+    "panelIzq panelDer"
+    "panelCentral panelCentral"
+    "footer footer"
+}
+
+
+.grillaSeguimiento{
+    display:grid;
+    gap:10px;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows:.5fr .5fr 2fr 2fr .5fr;
+    grid-template-areas: "header"
+"nav"
+"seguimientoSecc"
+"panelAbajo"
+"footer"
+}
+
+
+
+.grillaGestionUsu{
+    display:grid;
+    gap:10px;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows:.5fr .5fr 3fr 1fr .5fr;
+    grid-template-areas: "header"
+"nav"
+"inputDatos"
+"panelCaptcha"
+"footer"
+}
+
+
+
+header{
+    grid-area: header;
+    background-color: #4e94ab;
+    display: flex;
+    flex-direction: row;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 5px;
+}
+
+nav{
+    grid-area:nav;
+}
+
+aside{
+    grid-area:blanco;
+    background-color: #073a4b;
+}
+
+footer{
+    grid-area: footer;
+    font-family: 'Roboto', sans-serif;
+    background-color: #4e94ab;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bolder;
+    padding: 5px;
+}
 
 section#protesis{
     grid-area: protesis;
@@ -108,7 +210,7 @@ section#seguimientoSecc{
     background-color: rgb(193, 207, 216);
     display: flex;
     flex-direction: column;
-    /* justify-content:first baseline; */
+    justify-content:first baseline;
     align-items: center;
     padding: 10px;
 }
@@ -148,6 +250,101 @@ section#panelCaptcha{
 }
 
 
+.flexible{
+    display: flex;
+    justify-content:left;
+    /* justify-items: center; */
+}
+
+@media screen and (max-width:468px){
+    .grilla{
+        grid-template-columns: 100%;
+        grid-template-rows:1fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: "header"
+    "nav"
+    "protesis"
+    "medicamentos"
+    "footer"
+    }
+
+    .grillaConcursos{
+        display:grid;
+        gap:10px;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows:.5fr .5fr 2fr 2fr .5fr;
+        grid-template-areas: "header"
+    "nav"
+    "protesisConcurso"
+    "medicamentosConcurso"
+    "footer footer"
+    }  
+    
+    .grillaCotizaciones{
+        display:grid;
+        gap:10px;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows:.5fr .5fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: "header"
+    "nav"
+    "panelIzq"
+    "panelDer"
+    "panelCentral"
+    "footer footer"
+    }
+    
+
+    .border{
+        background-color: lightcoral;
+    }
+
+
+}
+
+
+.menu{
+    display: flex;
+    padding: 0;
+    justify-content:space-between;
+    height: 50px;
+    background-color: #4e94ab;
+}
+
+.menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    justify-items:last baseline;
+}
+
+.menu li{
+    text-align: center;
+    flex-grow: 1;
+    border-right: 1px solid  #fff;
+}
+
+
+.menu li:hover{
+    background-color: rgba(0,0, 0, 0.1);
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tituloPrincipal{
+    background-color: #4e94ab;
+    font-family: 'Roboto', sans-serif;
+    font-size:large;
+    color: white;
+}
+
 #leyenda {
     font-family: 'Roboto', sans-serif;
     font-size: large;
@@ -184,7 +381,7 @@ section#panelCaptcha{
     font-weight: bolder;
     font-size: large;
     margin: 10px;
-    color: #0564b3;
+    color: #008BFF;
     border: 1px solid #008BFF;
 }
 
@@ -192,25 +389,26 @@ section#panelCaptcha{
 /* css lista Concursos*/
 .requisitos{
 	width:450px;
-  height:200px;
 
 }
 .requisitos ol{
-	      counter-reset: li;
+	            counter-reset: li;
 				list-style: none;
+				*list-style: decimal;
 				font: 15px 'trebuchet MS', 'lucida sans';
 				padding: 0;
 				margin-bottom: 4em;
 
 }
 .requisitos ol ol{
-				margin: 0 0 0 1em;
+				margin: 0 0 0 2em;
 			}
 
 .requisitos a{
 				position: relative;
 				display: block;
 				padding: .4em .4em .4em 2em;
+				*padding: .4em;
 				margin: .5em 0;
 				background: #FFF;
 				color: #444;
@@ -322,9 +520,9 @@ section#panelCaptcha{
 .subtitulos {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    font-size:large;
+    font-size:xx-large;
     margin: 10px;
-    color: #0e6dbb;
+    color: #008BFF;
 }
 
 
@@ -465,13 +663,13 @@ textarea{
             hsl(60,100%,1%));
     animation: rebota 1s alternate infinite ease-in;
   }
-
-
+  
+  
   @keyframes rebota{
     90%{
       height: 100px;
     }
-
+    
     100%{
       transform: translateY(200px);
       height: 80px;
@@ -479,18 +677,3 @@ textarea{
   }
 
 
-  .redes {
-    opacity: 0.5;
-  }
-
-  .redes:hover {
-    opacity: 1.0;
-  }
-
-  .letraFooter {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size:medium;
-    margin: 10px;
-    color: #b8d9f5;
-  }

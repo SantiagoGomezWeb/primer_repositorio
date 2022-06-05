@@ -5,80 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/cpce.ico" type="img"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Concursos</title>
 </head>
 
 <body>
-    <div class="grillaConcursos">
-        <header class="border flexible">
-            <img src="../img/logoNuevo.png" alt="CPCE">        
-            <h1 class="tituloPrincipal">Consejo Profesional de Ciencias Económicas</h1>
-        </header>
-        <!-- <nav class="border">Navegacion</nav> -->
-        <nav class="menu border">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="concursos.html">Concursos</a></li>
-                <li><a href="cotizaciones.html">Cotizaciones</a></li>
-                <li><a href="seguimiento.html">Seguimiento</a></li>
-                <li><a href="gestionUsuarios.html">Gestion usuarios</a></li>
-            </ul>
-        </nav>
-
-
-        <section id="protesisConcurso" class="border">
-            <img src="../img/ortopedia.png" alt="protesis" height="150" width="150">
-            <legend id="leyendaBold">Concursos Protesis</legend>
-            <br>
-            <fieldset id="pedidoDatos">
-                <legend id="leyenda">Seleccione un Concurso:</legend>
-                <div>
-                <input type="radio" id="15485" name="Protesis" value="15485"
-                        checked>
-                <label for="huey">Concurso #15485 - 08/01/2022</label>
-                </div>
-            
-                <div>
-                <input type="radio" id="58485" name="Protesis" value="58485">
-                <label for="dewey">Concurso #58485 - 15/02/2022</label>
-                </div>
-            
-                <div>
-                <input type="radio" id="8744" name="Protesis" value="8744">
-                <label for="louie">Concurso #8744 - 25/04/2022</label>
-                </div>
-            </fieldset>            
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-xl-11">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/logo3.png" alt="CPCE"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="concursos.html">Concursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="seguimiento.html">Seguimiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gestionUsuarios.html">Gestion usuarios</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- <div class="col-xl-1">
+                <img src="./img/login1.png" alt="login">
+            </div> -->
+            <!-- <div class="col-md-1 col-xl-1 me-auto">
+                <a href="https://www.facebook.com/" target="_blank"> <img class="redes"
+                    src="./img/face.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"> <img class="redes"
+                        src="./img/insta.png" alt="instagram"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"> <img class="redes"
+                        src="./img/ws.png" alt="whatsapp"></a>
+              </div>             -->
         </section>
-        <section id="medicamentosConcurso" class="border">
-            <img src="../img/medicamentos.png" alt="medicamentos" height="150" width="150">
-            <legend id="leyendaBold">Concursos Medicamentos</legend>
-            <br>
-            <fieldset id="pedidoDatos">
-                <legend id="leyenda">Seleccione un Concurso:</legend>
-                <div>
-                <input type="radio" id="478" name="Protesis" value="478"
-                        checked>
-                <label for="huey">Concurso #478 - 18/02/2022</label>
-                </div>
-                <div>
-                <input type="radio" id="901" name="Protesis" value="901">
-                <label for="dewey">Concurso #901 - 25/04/2022</label>
-                </div>
-            </fieldset>
+    </header>
+    <main class="container">
+        <section class="row">
+            <section class="col-xl-6">
+                <img src="../img/ortopedia.png" alt="protesis" height="300" width="300">
+                <legend id="leyendaBold">Concursos Protesis</legend>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchCheckDisabled">Concurso #10100 - 08/01/2022</label>
+                  </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Concurso #15200 - 30/05/2022</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Concurso #15300 - 22/06/2022</label>
+                  </div>
+            </section>
+            <section class="col-xl-6">
+                <img src="../img/medicamentos.png" alt="medicamentos" height="300" width="300">
+                <legend id="leyendaBold">Concursos Medicamentos</legend>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                    <label class="form-check-label" for="flexSwitchCheckDisabled">Concurso #990 - 08/01/2022</label>
+                  </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Concurso #1580 - 30/05/2022</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Concurso #1600 - 22/06/2022</label>
+                  </div>
+            </section>
         </section>
+    </main>
+    <footer class="container bg-dark">
+        <section class="row">
+            <div class="col-xl-4">
+                <p class="letraFooter">Hipolito Irigoyen 490 </p>
+            </div>
+            <div class="col-xl-4">
+                <p class="letraFooter">info@cpcecba.org.ar</p>
+            </div>
+            <div class="col-xl-4">
+                <p class="letraFooter">+ 54 9 351 4688330</p>
+            </div>
+        </section>
+    </footer>
 
-        <aside class="border">
-            <legend id="leyendaBlancaBold">Futuro Videito Instructivo</legend>
-        </aside>
 
-        <footer class="border">
-            <p>Av. Hipólito Yrigoyen 490 (X5000JHR) - Córdoba</p>
-            <p>cpcecba@cpcecba.org.ar</p>
-            <p>Tel. (0351) 468-8300</p>    
-        </footer>
-        
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+    </script>
 
 </body>
 
