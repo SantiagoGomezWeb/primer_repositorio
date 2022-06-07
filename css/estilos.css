@@ -28,7 +28,7 @@ section#protesis{
     flex-direction: column;
     justify-content:first baseline;
     align-items: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 section#medicamentos{
@@ -39,7 +39,7 @@ section#medicamentos{
     flex-direction: column;
     justify-content:first baseline;
     align-items: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 
@@ -114,12 +114,11 @@ section#seguimientoSecc{
 }
 
 section#panelAbajo{
-    grid-area: panelDer;
+    grid-area: panelAbajo;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(193, 207, 216);
     display: flex;
     flex-direction: column;
-    justify-content:first baseline;
     align-items: center;
     padding: 10px;
 }
@@ -394,7 +393,7 @@ table {
 	padding:50px;
 	border-radius:10px;
 	margin:auto;
-	background-color:rgb(129, 149, 238);
+	background-color:rgb(180, 144, 203);
 }
 
 form label{
@@ -494,3 +493,40 @@ textarea{
     margin: 10px;
     color: #b8d9f5;
   }
+
+  /* .login {
+
+      background-color: #f4f6f8;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+      font-size:medium;
+      margin: 10px;
+      color: #103d3d;
+    }   */  
+  
+    .usr1 {
+       font-family: 'Roboto', sans-serif;
+       font-weight: bolder;
+       font-size:medium;
+       /* margin: 10px; */
+       color: #270303;
+     }  
+
+     .usr {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+      font-size:medium;
+      /* margin: 10px; */
+      color: #9e3131;
+    }
+
+
+.carousel-inner img {
+    width: 500px;
+    max-height: 240px;
+}
+
+.carousel-inner, .carousel-inner > .item, .carousel-inner > .item > img {
+ height: 240px;
+}
+
