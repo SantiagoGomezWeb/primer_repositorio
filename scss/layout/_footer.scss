@@ -1,0 +1,14 @@
+.letraFooter {
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size:medium;
+    margin: 10px;
+    color: #b8d9f5;
+  }
+
+  .redes {
+    opacity: 0.5;
+    &:hover{
+        opacity: 1.0;
+        }            
+    }

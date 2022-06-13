@@ -1,0 +1,12 @@
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items: center;
+    padding: 1px;
+    font-family: $font-family-general;
+    font-weight: bolder;
+    font-size: large;
+    color: #0564b3;
+    // border: $box-general;
+}
